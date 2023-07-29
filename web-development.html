@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>web development</title>
+
+
+</head>
+
+<body>
+    <header class="navbar position-absolute">
+        <div class="container d-flex align-items-center justify-content-between py-2">
+            <a href="">
+                <img src="assets/images/logo.svg" width="47" alt="logo">
+            </a>
+            <button id="mobile_menu_button" class="menu_button d-lg-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main_navigation">
+                <ul class="d-lg-flex align-items-center list-unstyled m-0">
+                    <button class="cross_button d-lg-none" id="cross_header_menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="">Term n condition</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-phone me-2"></i>877 444 999 0</a>
+                    </li>
+                    <li>
+                        <a href='' class="button__primary" role="button" data-bs-toggle="modal"
+                            data-bs-target="#leadFormModal">
+                            <span class="button-content">Let's Talk</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section
+        class="banner__section position-relative d-flex align-items-center min-vh-100 py-5 bg-dark overflow-hidden">
+        <span
+            class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+        <div class="container position-relative dark-mode mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3">
+            <div class="row gy-5">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="position-relative zindex-5 text-lg-start text-center">
+                        <h1 class="display-2 mb-4 pb-lg-3 pb-md-2 text-white"> Web Development <span
+                                class="text-primary">Company in USA</span></h1>
+                        <p class="mb-4 pb-lg-3 pb-md-2">
+                            <span class="me-2 text-light">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</span>
+                            <!-- <img src="assets/images/clutch-rating.png" width="193" alt="Clutch rating" class="mt-n1"> -->
+                        </p>
+                        <a href='' class="button__primary" role="button" data-bs-toggle="modal"
+                            data-bs-target="#leadFormModal">
+                            <span class="button-content">Start your project </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="position-relative ms-xl-0 ms-lg-4">
+                        <div class="position-absolute top-50 start-50 translate-middle ratio ratio-1x1"
+                            style="width: 125%; max-width: 49.75rem;">
+                            <div class="p-md-0 p-5">
+                                <img src="assets/images/hero-bg.png" alt="Shape"
+                                    class="hero-animation-spin p-md-0 p-5 img-fluid">
+                            </div>
+                        </div>
+                        <div class="position-relative bg-white rounded-3 p-5">
+                            <form>
+                                <h2 class="mb-5">Request for proposal</h2>
+                                <div class="row gy-4">
+                                    <div class="col-12">
+                                        <label class="mb-1" for="name">Name</label>
+                                        <input type="text" id="name" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="mb-1" for="email">Email</label>
+                                        <input type="email" id="email" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="mb-1" for="phone">Phone</label>
+                                        <input type="text" id="phone" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="mb-1" for="message">Message</label>
+                                        <textarea id="message" class="form-control"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="button__primary w-100">
+                                            <span class="button-content">Submit</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__padding section__padding__bottom">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 ">
+                    <div class="align-self-center ps-lg-0 ps-md-4">
+                        <h2 class="h1 mb-lg-4 mb-3">Web Development Services</h2>
+                        <p class="mb-4 pb-lg-3 fs-lg">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-2">
+                    <div class="card h-100">
+                        <div class="card-body my-md-5 my-4 py-xl-2 py-md-0 py-sm-2 text-center">
+                            <img src="assets/images/01.svg" alt="Icon" class="d-block mb-3 mx-auto">
+                            <h3 class="h5 mb-3">Software Development</h3>
+                            <p class="mb-0">Commodo senectus massa est urna mi. Mattis dis arcu aenean libero
+                                viverra
+                                gravida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-2">
+                    <div class="card h-100">
+                        <div class="card-body my-md-5 my-4 py-xl-2 py-md-0 py-sm-2 text-center">
+                            <img src="assets/images/02.svg" alt="Icon" class="d-block mb-3 mx-auto">
+                            <h3 class="h5 mb-3">App Development</h3>
+                            <p class="mb-0">Enim vehicula integer mattis morbi risus. Hendrerit pharetra arcu
+                                quam
+                                viverra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-2">
+                    <div class="card h-100">
+                        <div class="card-body my-md-5 my-4 py-xl-2 py-md-0 py-sm-2 text-center">
+                            <img src="assets/images/03.svg" alt="Icon" class="d-block mb-3 mx-auto">
+                            <h3 class="h5 mb-3">Support &amp; Maintenance</h3>
+                            <p class="mb-0">Turpis ultrices lacinia ut placerat dignissim morbi. Amet lectus sed
+                                tortor
+                                in elit adipiscing magnis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-2">
+                    <div class="card h-100">
+                        <div class="card-body my-md-5 my-4 py-xl-2 py-md-0 py-sm-2 text-center">
+                            <img src="assets/images/04.svg" alt="Icon" class="d-block mb-3 mx-auto">
+                            <h3 class="h5 mb-3">Software QA &amp; Testing</h3>
+                            <p class="mb-0">Amet felis viverra proin feugiat. Eget metus metus lorem dolor
+                                pellentesque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a href='' class="button__primary" role="button" data-bs-toggle="modal"
+                        data-bs-target="#leadFormModal">
+                        <span class="button-content">Start your project </span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-dark text-white">
+        <div class="container-fluid g-0 g-0 m-0 p-0">
+            <div class="row g-0 m-0 p-0 align-items-center">
+                <div class="col-md-5 g-0 m-0 p-0">
+                    <img src="assets/images/social-seoooo11.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7 g-0 m-0 p-0">
+                    <div class="px-5">
+                        <h2 class="mb-4">Creative Web Development Agency</h2>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, dolor odio soluta temporibus
+                            mollitia et quas fuga sunt totam laudantium at, nulla expedita blanditiis itaque, recusandae
+                            reprehenderit atque ratione voluptatum.
+                        </p>
+                        <div>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="food-tab" data-bs-toggle="tab"
+                                        data-bs-target="#food" type="button" role="tab" aria-controls="food"
+                                        aria-selected="true">Food</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="ecommerce-tab" data-bs-toggle="tab"
+                                        data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce"
+                                        aria-selected="false">E-commerce</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="marketplaces-tab" data-bs-toggle="tab"
+                                        data-bs-target="#marketplaces" type="button" role="tab"
+                                        aria-controls="marketplaces" aria-selected="false">Marketplaces</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="social-tab" data-bs-toggle="tab"
+                                        data-bs-target="#social" type="button" role="tab" aria-controls="social"
+                                        aria-selected="false">Social
+                                        services</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="food" role="tabpanel"
+                                    aria-labelledby="food-tab">
+                                    <div class="py-5">
+                                        <h3 class="mb-4">Food</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos
+                                            harum
+                                            aliquid eaque non! Accusantium eum eveniet pariatur soluta molestias,
+                                            nesciunt
+                                            sed
+                                            doloribus consectetur, nihil nam modi, aliquam debitis facere!
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ecommerce" role="tabpanel"
+                                    aria-labelledby="ecommerce-tab">
+                                    <div class="py-5">
+                                        <h3 class="mb-4">E-comerce</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos
+                                            harum
+                                            aliquid eaque non! Accusantium eum eveniet pariatur soluta molestias,
+                                            nesciunt
+                                            sed
+                                            doloribus consectetur, nihil nam modi, aliquam debitis facere!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="marketplaces" role="tabpanel"
+                                    aria-labelledby="marketplaces-tab">
+                                    <div class="py-5">
+                                        <h3 class="mb-4">Marketplaces</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos
+                                            harum
+                                            aliquid eaque non! Accusantium eum eveniet pariatur soluta molestias,
+                                            nesciunt
+                                            sed
+                                            doloribus consectetur, nihil nam modi, aliquam debitis facere!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
+                                    <div class="py-5">
+                                        <h3 class="mb-4">Social services</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos
+                                            harum
+                                            aliquid eaque non! Accusantium eum eveniet pariatur soluta molestias,
+                                            nesciunt
+                                            sed
+                                            doloribus consectetur, nihil nam modi, aliquam debitis facere!
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section__padding ">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 ">
+                    <div class="align-self-center ps-lg-0 ps-md-4">
+                        <h2 class="h1 mb-lg-4 mb-3">Web development technology stack</h2>
+                        <p class="mb-4 pb-lg-3 fs-lg">
+                            Experience pure creativity, skill, and expertise in Technologies for Web Development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="technologies-slider">
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/js-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">Javascript</span>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/node-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">Node.JS</span>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/react-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">React</span>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/php-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">PHP</span>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/angular-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">Angular</span>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <img src="assets/images/php-light.svg" alt="Logo" class="mx-auto">
+                            </div>
+                            <span class="text-body d-block text-center">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section__padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="slider-one">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h2 class="h1 mb-4 pb-3 pt-2 d-none d-lg-block">Industries We Serve</h2>
+                                    <h3 class="h5 mb-lg-4 mb-3">Startup and technology</h3>
+                                    <p>Interdum amet lobortis viverra et sapien aliquam nunc amet. Bibendum eu
+                                        pellentesque sit risus
+                                        leo commodo. Nibh dictum tellus lectus in risus eget cursus vitae nisi lacinia
+                                        aliquam utuismod
+                                        cras pellentesque.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/images/02.jpg" class="rounded-3 img-fluid" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h2 class="h1 mb-4 pb-3 pt-2 d-none d-lg-block">Industries We Serve</h2>
+                                    <h3 class="h5 mb-lg-4 mb-3">Startup and technology</h3>
+                                    <p>Interdum amet lobortis viverra et sapien aliquam nunc amet. Bibendum eu
+                                        pellentesque sit risus
+                                        leo commodo. Nibh dictum tellus lectus in risus eget cursus vitae nisi lacinia
+                                        aliquam utuismod
+                                        cras pellentesque.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/images/02.jpg" class="rounded-3 img-fluid" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h2 class="h1 mb-4 pb-3 pt-2 d-none d-lg-block">Industries We Serve</h2>
+                                    <h3 class="h5 mb-lg-4 mb-3">Startup and technology</h3>
+                                    <p>Interdum amet lobortis viverra et sapien aliquam nunc amet. Bibendum eu
+                                        pellentesque sit risus
+                                        leo commodo. Nibh dictum tellus lectus in risus eget cursus vitae nisi lacinia
+                                        aliquam utuismod
+                                        cras pellentesque.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/images/02.jpg" class="rounded-3 img-fluid" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex justify-content-center justify-content-lg-start mt-2 mt-lg-auto position-absolute bottom-0 slider_buttons_responsive">
+                        <button type="button" id="prev-industry" class="btn-slider me-3">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button type="button" id="next-industry" class="btn-slider">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__padding ">
+        <h2 class="h1 mb-lg-5 mb-4 pb-lg-0 pb-md-2 text-center">Explore Our Featured Projects</h2>
+        <div class="bg-dark text-white">
+            <div class="container-fluid g-0 m-0 p-0">
+                <div class="row g-0 m-0 p-0 align-items-center">
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="bg-secondary ">
+                            <img src="assets/images/01.png" alt="Project image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="px-5">
+                            <h4 class="mb-lg-4 mb-3 fs-base fw-normal  text-white">Mobile App</h4>
+                            <h3 class="h2 mb-lg-4 mb-3">Task management app</h3>
+                            <p class="mb-lg-4 mb-3">Odio mus adipiscing nunc sed viverra massa aliquam sit vestibulum
+                                maecenas
+                                arcu adipiscing tincidunt at velit pharetra varius sit.</p>
+                            <ul class="mb-lg-4 mb-3 fs-sm text-muted list-inline" style="max-width: 19.125rem;">
+                                <li class="list-inline-item me-1">
+                                    Product Strategy
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Front end Development
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Systems Design
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Web Development
+                                </li>
+                            </ul>
+                            <a href='' class="button__secondary">
+                                <span class="button-content">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid g-0 m-0 p-0">
+                <div class="row g-0 m-0 p-0 align-items-center">
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="px-5">
+                            <h4 class="mb-lg-4 mb-3 fs-base fw-normal text-body">Landing Page</h4>
+                            <h3 class="h2 mb-lg-4 mb-3">Landing page for electric scooters</h3>
+                            <p class="mb-lg-4 mb-3">Vitae non luctus rhoncus ipsum feugiat luctus ornare. Pretium nulla
+                                sed
+                                quis
+                                duis tristique orci. Odio in pellentesque urna sit facilisi convallis vel tempus.</p>
+                            <ul class="mb-lg-4 mb-3 fs-sm text-muted list-inline" style="max-width: 19.125rem;">
+                                <li class="list-inline-item me-1">
+                                    Product Strategy
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Front end Development
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Systems Design
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Web Development
+                                </li>
+                            </ul>
+                            <!-- <a href="#" class="btn btn-lg btn-outline-primary">Read More</a> -->
+                            <a href='' class="button__secondary">
+                                <span class="button-content">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="bg-secondary ">
+                            <img src="assets/images/02.png" alt="Project image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-white">
+            <div class="container-fluid g-0 m-0 p-0">
+                <div class="row g-0 m-0 p-0 align-items-center">
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="bg-secondary">
+                            <img src="assets/images/03.png" alt="Project image" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 g-0 m-0 p-0">
+                        <div class="px-5">
+                            <h4 class="mb-lg-4 mb-3 fs-base fw-normal">Web App</h4>
+                            <h3 class="h2 mb-lg-4 mb-3">Сrypto market dashboard</h3>
+                            <p class="mb-lg-4 mb-3">Donec donec ultricies feugiat imperdiet enim cras eget enim
+                                elementum
+                                eget
+                                ultrices praesent pretium morbi.</p>
+                            <ul class="mb-lg-4 mb-3 fs-sm text-muted list-inline" style="max-width: 19.125rem;">
+                                <li class="list-inline-item me-1">
+                                    Front end Development
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Systems Design
+                                    <span class="ms-1">/</span>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    Web Development
+                                </li>
+                            </ul>
+                            <!-- <a href="#" class="btn btn-lg btn-outline-primary">Read More</a> -->
+                            <a href='' class="button__secondary">
+                                <span class="button-content">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__padding section__padding__bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="position-relative bg-white rounded-3 p-5 shadow-lg">
+                        <form>
+                            <h2 class="mb-5">Request for proposal</h2>
+                            <div class="row gy-4">
+                                <div class="col-12">
+                                    <label class="mb-1" for="name">Name</label>
+                                    <input type="text" id="name" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-1" for="email">Email</label>
+                                    <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-1" for="phone">Phone</label>
+                                    <input type="text" id="phone" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label class="mb-1" for="message">Message</label>
+                                    <textarea id="message" class="form-control"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="button__primary w-100">
+                                        <span class="button-content">Submit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer position-relative bg-dark pt-5 pb-4 pb-lg-5">
+        <span
+            class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+        <div class="position-relative container dark-mode pt-lg-4">
+            <div class="row pb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+                        <img src="assets/img/logo.svg" width="47" alt="Silicon">
+                        Silicon
+                    </div>
+                    <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque
+                        varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat
+                        feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.
+                    </p>
+                    <form class="needs-validation" novalidate="">
+                        <label for="subscr-email" class="form-label text-white">Subscribe to our newsletter</label>
+                        <div class="input-group">
+                            <input type="email" id="subscr-email" class="form-control footer-input rounded-start ps-5"
+                                placeholder="Your email" required="">
+                            <i
+                                class="fa-regular fa-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                            <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email
+                                address.</div>
+                            <button type="submit" class="btn btn-primary btn-footer-submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+                    <div id="footer-links" class="row">
+                        <div class="col-lg-4">
+                            <h6 class="mb-2">
+                                <a href="#useful-links" class="d-block  dropdown-toggle d-lg-none py-2"
+                                    data-bs-toggle="collapse">Useful Links</a>
+                            </h6>
+                            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Services</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Our
+                                            Clients</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Testimonials</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">News</a></li>
+                                </ul>
+                                <ul class="nav flex-column mb-2 mb-lg-0">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-3">
+                            <h6 class="mb-2">
+                                <a href="#social-links" class="d-block  dropdown-toggle d-lg-none py-2"
+                                    data-bs-toggle="collapse">Socials</a>
+                            </h6>
+                            <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                <ul class="nav flex-column mb-2 mb-lg-0">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                            <h6 class="mb-2">Contact Us</h6>
+                            <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+                <span class="text-light opacity-50">© All rights reserved. Made by </span>
+                <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank"
+                    rel="noopener">Createx Studio</a>
+            </p>
+        </div>
+    </footer>
+    <div class="modal fade" id="leadFormModal" tabindex="-1" aria-labelledby="leadFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <!-- <button type="button" class="btn-close btn__close__custom" data-bs-dismiss="modal"
+                        aria-label="Close"></button> -->
+                    <h2>Let's start a project together</h2>
+                    <p>We make all your dreams come true in a successful project.</p>
+                    <form>
+                        <div class="row lead-form-modal g-3">
+                            <div class="col-12">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Phone" class="form-control">
+                            </div>
+                            <div class="col-12 ">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12 ">
+                                <button type="submit" class="button__primary w-100">
+                                    <span class="button-content">Let's Talk</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="assets/js/custom.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+
+</html>
